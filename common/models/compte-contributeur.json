@@ -1,0 +1,23 @@
+{
+    "name": "CompteContributeur",
+    "base": "CompteUser",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "compteDebite": {
+            "type": "string"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "contributions": {
+            "type": "hasMany",
+            "model": "Transaction",
+            "foreignKey": ""
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

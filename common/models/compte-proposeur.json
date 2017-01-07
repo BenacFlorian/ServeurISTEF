@@ -1,0 +1,25 @@
+{
+    "name": "CompteProposeur",
+    "base": "CompteUser",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "compteCredite": {
+            "type": "string",
+            "required": true,
+            "default": "0000000000"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "projets": {
+            "type": "hasMany",
+            "model": "Projet",
+            "foreignKey": ""
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

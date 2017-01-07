@@ -1,0 +1,32 @@
+{
+    "name": "Tag",
+    "plural": "Tags",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "label": {
+            "type": "string",
+            "required": true
+        }
+    },
+    "validations": [],
+    "relations": {
+        "projets": {
+            "type": "hasAndBelongsToMany",
+            "model": "Projet",
+            "foreignKey": ""
+        }
+    },
+    "acls": [
+        {
+            "accessType": "*",
+            "principalType": "ROLE",
+            "principalId": "$everyone",
+            "permission": "ALLOW"
+        }
+    ],
+    "methods": {}
+}

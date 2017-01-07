@@ -1,0 +1,47 @@
+[
+    {
+      "label": "Sport"
+    },
+    {
+      "label": "Film et vidéo"
+    },
+    {
+      "label": "Musique"
+    },
+    {
+      "label": "Solidaire et citoyen"
+    }, 
+    {
+      "label": "Edition et journal"
+    },
+    {
+      "label": "Spectacle vivant"
+    },
+    {
+      "label": "Jeux"
+    },
+    {
+      "label": "Art et photo"
+    },
+    {
+      "label": "Artisanat et Cuisine"
+    },
+    {
+      "label": "Technologie"
+    },
+    {
+      "label": "Mode et design"
+    },
+    {
+      "label": "BD"
+    },
+    {
+      "label": "Enfance et Education"
+    },
+    {
+      "label": "Patrimoine"
+    },
+    {
+      "label": "Autre projet"
+    }
+]

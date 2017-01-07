@@ -1,0 +1,102 @@
+{
+    "name": "Projet",
+    "plural": "Projets",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "titre": {
+            "type": "string",
+            "required": true
+        },
+        "description": {
+            "type": "string"
+        },
+        "dateCreation": {
+            "type": "date",
+            "required": true
+        },
+        "dateExpiration": {
+            "type": "date",
+            "required": true
+        },
+        "objectifFinancier": {
+            "type": "number",
+            "required": true
+        },
+        "sommeRecoltee": {
+            "type": "number",
+            "required": true,
+            "default": 0
+        },
+        "estArchive": {
+            "type": "boolean",
+            "required": true
+        },
+        "estMisEnAvant": {
+            "type": "boolean",
+            "required": true
+        },
+        "urlVideo": {
+            "type": "string"
+        },
+        "urlPhotoPrincipal": {
+            "type": "string"
+        },
+        "dateExpirationMisEnAvant": {
+            "type": "date"
+        },
+        "dateArchivage": {
+            "type": "date"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "compteProposeur": {
+            "type": "belongsTo",
+            "model": "CompteProposeur",
+            "foreignKey": ""
+        },
+        "photos": {
+            "type": "hasMany",
+            "model": "Photo",
+            "foreignKey": ""
+        },
+        "videos": {
+            "type": "hasMany",
+            "model": "Video",
+            "foreignKey": ""
+        },
+        "tags": {
+            "type": "hasAndBelongsToMany",
+            "model": "Tag",
+            "foreignKey": ""
+        },
+        "categorie": {
+            "type": "belongsTo",
+            "model": "Categorie",
+            "foreignKey": ""
+        },
+        "contributions": {
+            "type": "hasMany",
+            "model": "Contribution",
+            "foreignKey": ""
+        },
+        "contreparties": {
+            "type": "hasMany",
+            "model": "Contrepartie",
+            "foreignKey": ""
+        }
+    },
+    "acls": [
+        {
+            "accessType": "*",
+            "principalType": "ROLE",
+            "principalId": "$everyone",
+            "permission": "ALLOW"
+        }
+    ],
+    "methods": {}
+}

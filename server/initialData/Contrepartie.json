@@ -1,0 +1,52 @@
+[
+    {
+        "palier": 5,
+        "value": "Un t-shirt",
+        "projetId": 1
+    },
+    {
+        "palier": 5,
+        "value": "Un t-shirt",
+        "projetId": 2
+    },
+    {
+        "palier": 5,
+        "value": "Un t-shirt",
+        "projetId": 3
+    },
+    {
+        "palier": 5,
+        "value": "Un t-shirt",
+        "projetId": 4
+    },
+    {
+        "palier": 5,
+        "value": "Un t-shirt",
+        "projetId": 5
+    },
+    {
+        "palier": 10,
+        "value": "Un t-shirt et un cd",
+        "projetId": 1
+    },
+    {
+        "palier": 15,
+        "value": "Un bisous",
+        "projetId": 1
+    },
+    {
+        "palier": 20,
+        "value": "Une lapdance",
+        "projetId": 1
+    },
+    {
+        "palier": 50,
+        "value": "Un bisous sur les fesses, photo a l'appuie",
+        "projetId": 1
+    },
+    {
+        "palier": 500,
+        "value": "Une partie de jambe en l'air",
+        "projetId": 1
+    }
+]

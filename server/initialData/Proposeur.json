@@ -1,0 +1,48 @@
+[
+    {
+        "compteCredite": "0123456789",
+        "nom": "Lopez",
+        "prenom": "Jo",
+        "adresse": "15 rue riquet",
+        "ville": "Toulouse",
+        "codePostal": "31400",
+        "estCompteActif": true,
+        "username": "LopezJo",
+        "email": "lopez.jo@gmail.com",
+        "dateNaissance": "2000-06-15",
+        "created": "2016-05-05",
+        "avatarUrl": "http://127.0.0.1:3000/api/containers/Proposeur/download/lopez.jo@gmail.com.jpg",
+        "password": "lopezjo"
+    },
+    {
+        "compteCredite": "9876543210",
+        "nom": "Terrieur",
+        "prenom": "Alex",
+        "adresse": "150 avenue de lespinet",
+        "ville": "Toulouse",
+        "dateNaissance": "1985-04-05",
+        "codePostal": "31400",
+        "estCompteActif": true,
+        "avatarUrl": "http://127.0.0.1:3000/api/containers/Proposeur/download/terrieur.alex@gmail.com.jpg",
+        "created": "2016-05-01",
+        "username": "TerrieurAlex",
+        "email": "terrieur.alex@gmail.com",
+        "password": "terrieuralex",
+        "description": "i have some generic interests, im a bit shy, and i dont play games and just want be there for a girl and make her feel like the most unique and special person, so this is one of the most annoying experiences ever. i dont even know why i bother with this stuff when everyone is basically selling themselves as an idealized superman and I just want girls to know who I am and they can take or leave it."
+    },
+    {
+        "compteCredite": "9876543210",
+        "nom": "Button",
+        "prenom": "Benjamin",
+        "created": "2016-06-06",
+        "dateNaissance": "1999-03-15",
+        "adresse": "150 a coté du lac",
+        "avatarUrl": "http://127.0.0.1:3000/api/containers/Proposeur/download/button.benjamin@gmail.com.jpg",
+        "ville": "Paris",
+        "codePostal": "75000",
+        "estCompteActif": true,
+        "username": "ButtonBenjamin",
+        "email": "button.benjamin@gmail.com",
+        "password": "buttonbenjamin"
+    }
+]

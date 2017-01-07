@@ -1,0 +1,39 @@
+{
+    "name": "Transaction",
+    "plural": "Transactions",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "somme": {
+            "type": "number",
+            "required": true
+        },
+        "date": {
+            "type": "date",
+            "required": true
+        }
+    },
+    "validations": [],
+    "relations": {
+        "projet": {
+            "type": "belongsTo",
+            "model": "Projet",
+            "foreignKey": ""
+        },
+        "compteContributeur": {
+            "type": "belongsTo",
+            "model": "CompteContributeur",
+            "foreignKey": ""
+        },
+        "compteProposeur": {
+            "type": "belongsTo",
+            "model": "CompteProposeur",
+            "foreignKey": ""
+        }
+    },
+    "acls": [],
+    "methods": {}
+}

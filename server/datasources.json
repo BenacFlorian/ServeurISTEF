@@ -1,0 +1,17 @@
+{
+  "db": {
+    "host": "localhost",
+    "port": 5432,
+    "database": "istef",
+    "password": "",
+    "name": "db",
+    "connector": "postgresql",
+    "user": "dev"
+  },
+  "file": {
+    "name": "file",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage"
+  }
+}

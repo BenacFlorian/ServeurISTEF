@@ -1,0 +1,32 @@
+[
+    {
+        "compteDebite": "0123456789",
+        "nom": "Queen",
+        "prenom": "Oliver",
+        "adresse": "15 avenue de la gloire",
+        "ville": "Toulouse",
+        "codePostal": "31400",
+        "estCompteActif": true,
+        "username": "QueenOliver",
+        "created": "2016-06-16",
+        "dateNaissance": "1997-03-15",
+        "email": "queen.oliver@gmail.com",
+        "avatarUrl": "http://127.0.0.1:3000/api/containers/Contributeur/download/queen.oliver@gmail.com.jpg",
+        "password": "queenoliver"
+    },
+    {
+        "compteDebite": "9876543210",
+        "nom": "Kent",
+        "prenom": "Clark",
+        "dateNaissance": "1992-01-12",
+        "adresse": "150 boulevard carnot",
+        "ville": "Toulouse",
+        "codePostal": "31400",
+        "avatarUrl": "http://127.0.0.1:3000/api/containers/Contributeur/download/kent.clark@gmail.com.jpg",
+        "estCompteActif": true,
+        "created": "2016-05-07",
+        "username": "KentClark",
+        "email": "kent.clark@gmail.com",
+        "password": "kentclark"
+    }
+]

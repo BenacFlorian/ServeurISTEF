@@ -1,0 +1,75 @@
+{
+    "_meta": {
+        "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+        "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+    },
+    "User": {
+        "dataSource": "db"
+    },
+    "AccessToken": {
+        "dataSource": "db",
+        "public": false
+    },
+    "ACL": {
+        "dataSource": "db",
+        "public": false
+    },
+    "RoleMapping": {
+        "dataSource": "db",
+        "public": false
+    },
+    "Role": {
+        "dataSource": "db",
+        "public": false
+    },
+    "Projet": {
+        "dataSource": "db",
+        "public": true
+    },
+    "Tag": {
+        "dataSource": "db",
+        "public": true
+    },
+    "Categorie": {
+        "dataSource": "db",
+        "public": true
+    },
+    "Transaction": {
+        "dataSource": "db",
+        "public": true
+    },
+    "CompteUser": {
+        "dataSource": "db",
+        "public": true
+    },
+    "CompteContributeur": {
+        "dataSource": "db",
+        "public": true
+    },
+    "CompteProposeur": {
+        "dataSource": "db",
+        "public": true
+    },
+    "Photo": {
+        "dataSource": "db",
+        "public": true
+    },
+    "Contrepartie": {
+        "dataSource": "db",
+        "public": true
+    },
+    "container": {
+        "dataSource": "file",
+        "public": true
+    }
+}

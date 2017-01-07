@@ -1,0 +1,35 @@
+{
+    "name": "Contrepartie",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "palier": {
+            "type": "number",
+            "required": true
+        },
+        "value": {
+            "type": "string",
+            "required": true
+        }
+    },
+    "validations": [],
+    "relations": {
+        "projet": {
+            "type": "belongsTo",
+            "model": "Projet",
+            "foreignKey": ""
+        }
+    },
+    "acls": [
+        {
+            "accessType": "*",
+            "principalType": "ROLE",
+            "principalId": "$everyone",
+            "permission": "ALLOW"
+        }
+    ],
+    "methods": {}
+}

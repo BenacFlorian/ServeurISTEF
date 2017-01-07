@@ -48,5 +48,35 @@
         "palier": 500,
         "value": "Une partie de jambe en l'air",
         "projetId": 1
+    },
+    {
+        "palier": 50,
+        "value": "Un stickers",
+        "projetId": 6
+    },
+    {
+        "palier": 5000,
+        "value": "Le livre en exclusivité plus un cours de cuisine avec l'auteur",
+        "projetId": 6
+    },
+    {
+        "palier": 50,
+        "value": "Un abonement d'un an au magazine",
+        "projetId": 7
+    },
+    {
+        "palier": 5000,
+        "value": "Un espace publicitaire dans le magazine pendant 6mois",
+        "projetId": 7
+    },
+    {
+        "palier": 50,
+        "value": "Un exemplaire du livre",
+        "projetId": 8
+    },
+    {
+        "palier": 5000,
+        "value": "Une contine exclusive raconté par l'auteur pour une occasion spéciale",
+        "projetId": 8
     }
 ]

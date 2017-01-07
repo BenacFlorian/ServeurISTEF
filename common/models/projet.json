@@ -12,7 +12,10 @@
             "required": true
         },
         "description": {
-            "type": "string"
+            "type": "string",
+            "postgresql": {
+                "dataType": "text"
+            }
         },
         "dateCreation": {
             "type": "date",
@@ -81,7 +84,7 @@
         },
         "contributions": {
             "type": "hasMany",
-            "model": "Contribution",
+            "model": "Transaction",
             "foreignKey": ""
         },
         "contreparties": {

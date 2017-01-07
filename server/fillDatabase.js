@@ -32,8 +32,8 @@ module.exports = function (app) {
         )
         .then(
             function () {
-                console.log("Contributeur done - next is Projet and his tags");
-                return manageProjetAndTags();
+                console.log("Contributeur done - next is Projet his contriand his tags");
+                return manageProjetAndTagsAndContributions();
             }
         )
         .then(
@@ -148,15 +148,20 @@ module.exports = function (app) {
         }));
     }
 
-    function manageProjetAndTags() {
+    function manageProjetAndTagsAndContributions() {
         var Projet = app.models.Projet;
         console.log("Creating projet");
         return Promise.all(projetData.map(function (projet) {
-            var tagList = projet.tagList;
+            var tagList = projet.tagList,
+                contributionList = projet.contributionList;
             Projet.create(projet).then(function (result) {
                 return Promise.all(tagList.map(function (tag) {
                     return Promise.resolve(Promise.promisify(Projet.prototype.__create__tags).call(result, tag));
-                }));
+                })).then(function () {
+                    return Promise.all(contributionList.map(function (contribution) {
+                        return Promise.resolve(Promise.promisify(Projet.prototype.__create__contributions).call(result, contribution));
+                    }));
+                });
             });
         }));
     }

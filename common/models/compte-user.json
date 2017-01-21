@@ -56,6 +56,12 @@
         "principalId": "$everyone",
         "permission": "ALLOW",
         "property": "getUser"
+    },{
+        "accessType": "EXECUTE",
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "getUsers"
     }],
     "methods": {}
 }

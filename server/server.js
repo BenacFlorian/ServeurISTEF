@@ -43,8 +43,8 @@ boot(app, __dirname, function(err) {
         }
         else {
           // Check if database is empty, if empty -> Fill Database
-          var User = app.models.User;
-          User.find()
+          var CompteUser = app.models.CompteUser;
+          CompteUser.find()
               .then(function(data) {
                 if(data.length === 0) {
                   console.log("Empty database detected ; filling in");

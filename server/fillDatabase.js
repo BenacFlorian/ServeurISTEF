@@ -66,14 +66,26 @@ module.exports = function (app) {
 
     function createAdminUser() {
 
-        var User = app.models.User;
+        var CompteUser = app.models.CompteUser;
         console.log("Try creating User Admin...");
-        User.create([
+        CompteUser.create([
             {
-                username: 'admin',
-                email: 'admin@admin.fr',
-                password: 'root'
-			}
+                nom: "admin",
+                prenom: "admin",
+                adresse: "admin",
+                ville: "admin",
+                description: "Je suis l'admin.",
+                codePostal: "admin",
+                avatarUrl: "http://127.0.0.1:3000/api/containers/default/download/admin.jpg",
+                estCompteActif: true,
+                dateNaissance: "1993-06-22",
+                username: "admin",
+                password: 'root',
+                email: "admin@admin.fr",
+                emailVerified: true,
+                created: "2017-01-19",
+                lastUpdated: "2017-01-19",
+            }
 		], function (err, users) {
             if (err) return showError(err);
             console.log("Creating User Admin role");
@@ -85,11 +97,6 @@ module.exports = function (app) {
                 if (err) return showError(err);
                 console.log("User Admin created");
                 console.log("OK ALL DONE!!!");
-                /*var RoleMapping = app.models.RoleMapping;
-                role.principals.create({
-                	principalType: RoleMapping.USER,
-                	principalId: users[0].id
-                }, showError);*/
             });
         });
     }

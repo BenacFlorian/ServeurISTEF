@@ -286,6 +286,7 @@
         "description": "En ouvrant un livre de recettes, est-ce que tu n'as jamais pensé que c'était un peu rébarbatif tous ces pavés de lecture et cette liste sans fin d'ingrédients? Eh bien voilà, c'est fini tout ça! Si tu réunis une de ces caractéristiques, ce livre est fait pour toi! C'est un recueil de recettes de cuisine mais plus encore, c'est un guide qui te montrera qu'avec rien on peut quand même cuisiner plein de choses! Au fil des pages, viens découvrir l'art de l'improvisation avec le fond de ton frigo/placard. Mon but est de faire jaillir en toi l'envie de mitonner des petits plats, modestes, mais savoureux! Chaque chapitre est basé sur un aliment que tu as à coup sûr chez toi. Et si ce n'était pas le cas, pas de panique, j'ai préparé en introduction un kit de survie rien que pour toi.",
         "dateCreation": "2016-01-02",
         "dateExpiration": "2016-10-01",
+        "dateArchivage": "2016-10-15",
         "objectifFinancier": 5000,
         "sommeRecoltee": 10020,
         "estArchive": true,
@@ -345,6 +346,7 @@
         "description": "Salut à tous. C’est Hervé. Je fais ce Flash Spécial car votre journal a besoin de vous. Je cherche toujours à améliorer de plus en plus le journal mais la survie du journal est compromise. J'ai besoin de vous. Un journal ne peut pas survivre sans avoir un responsable marketing. Un journal est obligé de posséder une grande visibilité pour pouvoir prospérer et se développer. Je ne peux malheureusement pas le faire car il y a de plus en plus de demandes des lecteurs. Juste à titre d'information, un numéro me demande au minimum 60h de travail par semaine entre les analyses, les tableaux, les chroniques, la mise en page, les sélections et aujourd'hui l'application du journal. Un numéro oblige à travailler 7j/7. Il n'y a pas de problème pour moi car j'adore cela et je continuerai sur ce rythme. Le journal a aussi besoin  d'ajouter d'autres sports pour assouvir la demande. Les lecteurs veulent pouvoir profiter des analyses de rugby mais aussi de tennis en plus des 49 analyses des championnats de football publiées chaque semaine. Je ne peux plus réaliser ce travail seul mais le journal ne peut pas amortir le salaire d'un responsable marketing et d'un autre analyste. Il pourra le faire une fois qu'ils seront en action. Cela revient à 45 000€ à l'année en plus des économies effectuées pour le format papier. Le journal ne pourra plus exister sans eux.",
         "dateCreation": "2016-01-02",
         "dateExpiration": "2016-09-01",
+        "dateArchivage": "2016-09-10",
         "objectifFinancier": 20000,
         "sommeRecoltee": 10000,
         "estArchive": true,
@@ -407,6 +409,7 @@
         "description": "Fumi Déglingo est un dragon qui n’a pas froid aux yeux. Il est toujours là pour aider les enfants à retrouver leur chemin et découvrir le monde. Il emploie des mots et des expressions assez loufoques qui font beaucoup rire l’enfant. C’est un peu « un savant fou ». Fumi Déglingo : Extraverti, marrant, déglingo, déterminé, moralisateur. Défauts : Tête en l’air, capricieux, dingue, perfectionniste. Il fait voyager les enfants à travers le monde, et le premier privilégié est un enfant qui habite à Orléans, et qui a 7 ans. Il s’appelle Lucas.",
         "dateCreation": "2016-02-02",
         "dateExpiration": "2016-08-01",
+        "dateArchivage": "2016-08-02",
         "objectifFinancier": 9000,
         "sommeRecoltee": 10000,
         "estArchive": true,
@@ -455,6 +458,137 @@
                 "date": "2016-09-01T14:48:34.564Z",
                 "compteContributeurId": 2,
                 "compteProposeurId": null
+            }
+        ]
+    },
+    {
+        "titre": "Enregistrement du CD 'Hurdy Gurdy # Myst'",
+        "description": "Convaincue que la vielle à roue a sa place dans la création musicale d'aujourd'hui, la Cie Grain de Son a passé commande sur le thème des lieux mystérieux d'Auvergne à cinq compositeurs reconnus de musique contemporaine : Pierre-Alain Jaffrennou a composé la pièce 'Locus Terribilis' sur le 'Triangle de la burle' situé aux limites de l'Ardèche et de la Haute-Loire. Christophe Havel a composé la pièce 'Myst' sur le 'Lac du Bouchet' situé sur le plateau de Cayres-Pradelles au sud de la Haute-Loire. Pascale Jakubowski a composé la pièce 'Incantations' sur le mystère. Xavier Garcia a composé la pièce 'La bête' sur la 'Bête du Gévaudan'.Jean-Michel Bossini a composé la pièce 'Tellurique' sur la 'Chapelle Saint-Michel d'Aiguilhe', étrange chapelle construite au sommet d'un dyke. Ce projet a d'abord donné lieu à la création du vidéo-concert 'Hurdy Gurdy # Myst'..... Rencontre de la vielle à roue (Laurence Bourdin), de la poésie (Corinne Pradier), de la création vidéo (Benoit Voarick) et de la spatialisation sonore (Bernard Gousset)..... qui plonge le spectateur dans une expérience sensorielle intense, dans un questionnement, un voyage personnel qui met en résonance ses émotions et ses souvenirs sur des lieux ayant marqué sa mémoire. Afin de prolonger ce partage d'émotions musicales, l'équipe souhaite aujourd'hui enregistrer les uvres sur CD.",
+        "dateCreation": "2016-12-01",
+        "dateExpiration": "2017-04-01",
+        "objectifFinancier": 2500,
+        "sommeRecoltee": 500,
+        "estArchive": false,
+        "estMisEnAvant": false,
+        "urlPhotoPrincipal": "http://127.0.0.1:3000/api/containers/9/download/music.jpg",
+        "categorieId": 1,
+        "urlVideo": "https://www.youtube.com/watch?v=BZATswWIgOE",
+        "compteProposeurId": 3,
+        "tagList": [
+            {
+                "label": "Hurdy Gurdy"
+	        },
+            {
+                "label": "CD"
+	        },
+            {
+                "label": "Musique"
+	        }
+        ],
+        "contributionList": [
+            {
+                "somme":"500",
+                "date":"2016-12-20",
+                "CompteContributeurId":1
+            }
+        ]
+    },
+    {
+        "titre": "Grimpeurs d'Ailleurs",
+        "description": "Quel est notre projet ? Où : Amérique du Sud. Quand : Avril à Août 2017. Notre but : Faire découvrir l'escalade aux populations locales. Transport : Avion, van et marche. Comment cela se déroulera-t-il ? Lobjectif général du projet sera la découverte de la pratique de lescalade pour les populations locales et plus particulièrement auprès des enfants. Au cours de notre voyage nous passerons dans 4 pays. Dans chacun de ces pays, nous avons ciblé un site descalade. Chaque falaise sera le support dune intervention auprès de la population locale. Par ces interventions nous sensibiliserons notamment les enfants aux valeurs du sport, à lhygiène et à la santé.Les pays que nous avons choisis sont le Chili, lArgentine, la Bolivie et le Pérou. Hugues et Eliott débuteront à deux par le Chili en Avril 2017. Elsa et Taïs les rejoindront après leurs partiels fin Mai.",
+        "dateCreation": "2016-11-02",
+        "dateExpiration": "2017-03-01",
+        "objectifFinancier": 4000,
+        "sommeRecoltee": 200,
+        "estArchive": false,
+        "estMisEnAvant": false,
+        "urlPhotoPrincipal": "http://127.0.0.1:3000/api/containers/11/download/grimpeurDailleurs.jpg",
+        "categorieId": 7,
+        "compteProposeurId": 3,
+        "tagList": [
+            {
+                "label":"Grimpeur"
+            },
+            {
+                "label":"Escalade"
+            }
+        ],
+        "contributionList": [
+            {
+                "somme":"100",
+                "date":"2016-12-05",
+                "CompteContributeurId":1
+            },
+            {
+                "somme":"100",
+                "date":"2016-12-15",
+                "CompteContributeurId":2
+            }
+        ]
+    },
+    {
+        "titre": "TATOUAGE EN GRAND",
+        "description": "Bonjour a tous ! Nous sommes un salon de tatouage sur Paris et nous avons l'opportunité de pouvoir agrandir notre espace de travail pour élargir notre famille de tatoueurs ! Avec votre aide, quelques travaux et un peu de matériel, nous pouvons continuer cette aventure et vous inviter à trinquer a ce nouveau départ !En effet, à l'issue de ces travaux d'agrandissement, nous aimerions organiser un événement pour rassembler toute la communauté mobilisée pour notre projet et pouvoir ainsi commencer avec vous une nouvelle année 2017 avec votre nouveau salon La Mine !Ce financement va nous permettre de : - Aggrandir nos locaux - Pouvoir faire les travaux - Acheter le matériel de tatouage necessaire ( Nouvelles tables, ustensibles hygieniques, etc...) - Vous faire un accueil aux petits oignons !",
+        "dateCreation": "2016-10-09",
+        "dateExpiration": "2017-05-02",
+        "objectifFinancier": 3000,
+        "sommeRecoltee": 150,
+        "estArchive": false,
+        "estMisEnAvant": false,
+        "urlPhotoPrincipal": "http://127.0.0.1:3000/api/containers/11/download/tatouageEnGrand.jpg",
+        "categorieId": 7,
+        "compteProposeurId": 3,
+        "tagList": [
+            {
+                "label":"Tatouage"
+            },
+            {
+                "label":"Art"
+            }
+        ],
+        "contributionList": [
+            {
+                "somme":"100",
+                "date":"2016-12-05",
+                "CompteContributeurId":1
+            },
+            {
+                "somme":"100",
+                "date":"2016-12-15",
+                "CompteContributeurId":2
+            }
+        ]
+    },
+    {
+        "titre": "ACCUEILLIR 2 FAMILLES SYRIENNES EN BERRY",
+        "description": "Accueil du cur 36 veut réussir son projet... Notre projet est d'accueillir 2 familles syriennes avec chacune 3 enfants ... Il est en passe de se concrétiser grâce à la mise à la disposition de notre association de deux logements par les communes d'Argenton-sur-Creuse et de Mosnay et aussi grâce au soutien de nos adhérents et sympathisants et celui des associations locales. Nous attendons leur arrivée prochaine. Maintenant que ces appartements sont aménagés, nous faisons appel à vous pour soutenir matériellement ces dix personnes jusqu'à l'obtention du statut de réfugiés, ce qui signifie plusieurs mois. L'argent récolté grâce à votre générosité servira à couvrir les frais liés aux 2 logements (l'eau, l'électricité, les ordures ménagères, les assurances) mais aussi à l'alimentation des 2 familles (en complément de l'aide apportée par les Restos du coeur), à la scolarisation des 6 enfants, aux démarches concernant leur santé, à la constitution de leurs dossiers auprès des autorités compétentes ainsi qu'aux frais de transport et de traduction qui s'y ajouteront.   A quoi va servir le financement ? Votre financement va servir à faire vivre matériellement les deux familles en attendant l'acceptation de leur statut de demandeur dasile. Alors un grand merci à tous pour votre participation...Votre financement couvrira à 80 % les frais engagés par Acceuil du cur 36 : électricité, chauffage, eau, ordures ménagères et assurances des deux logements. Le loyer étant pris en charge par les deux communes. L'autre partie va couvrir les frais de santé, de scolarité (sacs, cahiers, règles...), des produits d'hygiène (gel douche, crème..) mais aussi le complément d'achats de produits alimentaires. Pour compléter le financement du projet, l'association organise un Bal Trad le samedi 04 Mars 2017 à la salle des fêtes d'Argenton-sur-Creuse.",
+        "dateCreation": "2016-10-09",
+        "dateExpiration": "2017-05-02",
+        "objectifFinancier": 3000,
+        "sommeRecoltee": 150,
+        "estArchive": false,
+        "estMisEnAvant": false,
+        "urlPhotoPrincipal": "http://127.0.0.1:3000/api/containers/12/download/familleSyriene.jpg",
+        "categorieId": 7,
+        "compteProposeurId": 3,
+        "tagList": [
+            {
+                "label":"Tatouage"
+            },
+            {
+                "label":"Art"
+            }
+        ],
+        "contributionList": [
+            {
+                "somme":"100",
+                "date":"2016-12-05",
+                "CompteContributeurId":1
+            },
+            {
+                "somme":"100",
+                "date":"2016-12-15",
+                "CompteContributeurId":2
             }
         ]
     }

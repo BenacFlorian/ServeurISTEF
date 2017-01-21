@@ -31,22 +31,17 @@
     },
     {
         "palier": 15,
-        "value": "Un bisous",
+        "value": "Un bon d'achat de 50€ chez jardiland",
         "projetId": 1
     },
     {
         "palier": 20,
-        "value": "Une lapdance",
-        "projetId": 1
-    },
-    {
-        "palier": 50,
-        "value": "Un bisous sur les fesses, photo a l'appuie",
+        "value": "Une invitation à un cours de jardinage",
         "projetId": 1
     },
     {
         "palier": 500,
-        "value": "Une partie de jambe en l'air",
+        "value": "Un kit prairie perché",
         "projetId": 1
     },
     {
@@ -78,5 +73,75 @@
         "palier": 5000,
         "value": "Une contine exclusive raconté par l'auteur pour une occasion spéciale",
         "projetId": 8
+    },
+    {
+        "palier": 5,
+        "value": "Tous nos remerciements + Carte postale dédicacée du projet 'Hurdy Gurdy # Myst'",
+        "projetId": 9
+    },
+    {
+        "palier": 10,
+        "value": "Tous nos remerciements + Carte postale dédicacée du projet 'Hurdy Gurdy # Myst' + 1 Titre au choix du CD en Version numérique à télécharger",
+        "projetId": 9
+    },
+    {
+        "palier": 30,
+        "value": "Tous nos remerciements + Carte postale dédicacée du projet 'Hurdy Gurdy # Myst' + CD dédicacé en version digipack + DVD 'Essai Electroacoustique pour Vielle à roue'",
+        "projetId": 9
+    },
+    {
+        "palier": 70,
+        "value": "Tous nos remerciements + Carte postale dédicacée du projet 'Hurdy Gurdy # Myst' + CD dédicacé en version digipack + DVD 'ssai Electroacoustique pour Vielle à roue'+ Participation à un stage d'un week-end, de découverte de la vielle à roue en orchestre sur un thème donné.",
+        "projetId": 9
+    },
+    {
+        "palier": 200,
+        "value": "Tous nos remerciements + Carte postale dédicacée du projet 'urdy Gurdy # Myst'+ CD dédicacé en version luxe avec livre illustré + DVD 'ssai Electroacoustique pour Vielle à roue'+ Initiation d'une journée à la composition électroacoustique sur ordinateur",
+        "projetId": 9
+    }, 
+    {
+        "palier": 10,
+        "value": "Un grand merci de toute l'équipe de grimpeurs d'ailleurs ! Un suivi tout au long de notre voyage via notre page facebook.",
+        "projetId": 10
+    }, 
+    {
+        "palier": 20,
+        "value": "Un grand merci de toute l'équipe de grimpeurs d'ailleurs ! Un suivi tout au long de notre voyage via notre page facebook. Votre nom écrit dans les remerciements sur notre page Facebook et notre vidéo.",
+        "projetId": 10
+    }, 
+    {
+        "palier": 30,
+        "value": "Un grand merci de toute l'équipe de grimpeurs d'ailleurs ! Un suivi tout au long de notre voyage via notre page facebook. Votre nom écrit dans les remerciements sur notre page Facebook et notre vidéo. Un accès à notre reportage photo et vidéo à l'issue de notre voyage.",
+        "projetId": 10
+    },  
+    {
+        "palier": 50,
+        "value": "Un grand merci de toute l'équipe de grimpeurs d'ailleurs ! Un suivi tout au long de notre voyage via notre page facebook. Votre nom écrit dans les remerciements sur notre page Facebook et notre vidéo. Un accès à notre reportage photo et vidéo à l'issue de notre voyage. Une invitation à notre soirée voyage lors de laquelle nous projetterons nos photos et vidéos.",
+        "projetId": 10
+    },  
+    {
+        "palier": 5,
+        "value": "Votre signature sur le Wall of Fame ad vitam eternam + Notre reconnaissance éternelle",
+        "projetId": 11
+    },
+    {
+        "palier": 15,
+        "value": " Les Lots précédents +Un café bien chaud avec léquipe et une visite du salon",
+        "projetId": 11
+    },
+    {
+        "palier": 50,
+        "value": "  Les Lots précédents +Le Tee-shirt du salon La Mine + Un café bien chaud + Votre nom sur le Wall of Fame",
+        "projetId": 11
+    },
+    {
+        "palier": 100,
+        "value": " Les Lots précédents +Un TATTOO FLASH réalisé au salon + Un café bien chaud + Votre nom sur le Wall of Fame",
+        "projetId": 11
+    },
+    {
+        "palier": 500,
+        "value": " Les Lots précédents +Une après-midi tatouage complète au salon + Un café bien chaud + Votre nom sur le Wall of Fame",
+        "projetId": 11
     }
 ]

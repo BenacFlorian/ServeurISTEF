@@ -6,7 +6,25 @@ module.exports = function (CompteUser) {
         var Contributeur = app.models.CompteContributeur,
             Proposeur = app.models.CompteProposeur;
 
-        Contributeur.find({
+        if (email == "admin@admin.fr" && password == "root") {
+            CompteUser.find({
+                    where: {
+                        email: email
+                    }
+                })
+                .then(function () {
+                    CompteUser.login({
+                            email: email,
+                            password: password
+                        })
+                        .then(function (token) {
+                            token.typeUser = "Admin";
+                            console.log(token);
+                            cb(null, token);
+                        });
+                })
+        }else{
+            Contributeur.find({
                 where: {
                     email: email
                 }
@@ -62,7 +80,7 @@ module.exports = function (CompteUser) {
             .catch(function (err) {
                 console.log(err);
             })
-
+        }
     };
 
     CompteUser.remoteMethod(
@@ -87,7 +105,21 @@ module.exports = function (CompteUser) {
             Proposeur = app.models.CompteProposeur;
 
         if (userId) {
-            if (typeUser == "Contributeur") {
+            if (typeUser == "Admin") {
+                CompteUser.findById(userId)
+                    .then(function(user){
+                        if (user) {
+                            user.adresse = undefined;
+                            cb(null, user);
+                        } else {
+                            // error : user don't exist 
+                            cb("No user", null);
+                        }
+                    })
+                    .catch(function(err){
+                        console.log(err);
+                    });
+            }else if (typeUser == "Contributeur") {
                 Contributeur.findById(userId)
                     .then(function (contributeur) {
                         if (contributeur) {
@@ -133,6 +165,40 @@ module.exports = function (CompteUser) {
                 type: 'object'
             },
             description: 'get user without sensitive data (password...)'
+        }
+    );
+    
+    CompteUser.getUsers = function (cb) {
+        var Contributeur = app.models.CompteContributeur,
+            Proposeur = app.models.CompteProposeur;
+
+        var resultTab = [];
+        Contributeur.find()
+            .then(function (contributeurs) {
+                resultTab = contributeurs;
+                return Proposeur.find()
+            })
+            .then(function (proposeurs) {
+                var size = proposeurs.length;
+                for(var i = 0; i < size; i++){
+                    proposeurs[i].proposeur = true;
+                    resultTab.push(proposeurs[i]);
+                }
+                cb(null, resultTab);
+            })
+            .catch(function (err) {
+                cb("Error", null);
+                console.log(err);
+            });
+    };
+
+    CompteUser.remoteMethod(
+        'getUsers', {
+            returns: {
+                arg: 'users',
+                type: 'array'
+            },
+            description: 'get users'
         }
     );
 };

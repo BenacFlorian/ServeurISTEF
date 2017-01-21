@@ -17,5 +17,11 @@
 }, {
         "name": "jongleur.jpg",
         "projetId": 5
+}, {
+        "name": "tatouageEnGrand2.jpg",
+        "projetId": 11
+}, {
+        "name": "tatouageEnGrand3.jpg",
+        "projetId": 11
 }
 ]

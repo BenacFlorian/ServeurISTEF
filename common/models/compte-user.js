@@ -85,7 +85,7 @@ module.exports = function (CompteUser) {
 
     CompteUser.remoteMethod(
         'SeConnecter', {
-            description: 'Login whatever the type of compte',
+            description: 'Login whatever the type of compte. TEST PUSH',
             accepts: [{
                 arg: 'email',
                 type: 'string'

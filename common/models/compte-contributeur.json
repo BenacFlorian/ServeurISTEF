@@ -16,8 +16,35 @@
             "type": "hasMany",
             "model": "Transaction",
             "foreignKey": ""
+        },
+        "categoriesPreferees": {
+            "type": "hasAndBelongsToMany",
+            "model": "Categorie",
+            "foreignKey": ""
         }
     },
-    "acls": [],
+    "acls": [
+        {
+            "accessType": "EXECUTE",
+            "principalType": "ROLE",
+            "principalId": "$everyone",
+            "permission": "ALLOW",
+            "property": "__get__categoriesPreferees"
+        },
+        {
+            "accessType": "EXECUTE",
+            "principalType": "ROLE",
+            "principalId": "$everyone",
+            "permission": "ALLOW",
+            "property": "*"
+        },
+        {
+            "accessType": "EXECUTE",
+            "principalType": "ROLE",
+            "principalId": "$everyone",
+            "permission": "ALLOW",
+            "property": "__unlink__categoriesPreferees"
+        }
+    ],
     "methods": {}
 }

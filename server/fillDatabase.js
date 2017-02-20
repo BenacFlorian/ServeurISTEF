@@ -139,10 +139,17 @@ module.exports = function (app) {
         console.log("Creating contributeur");
         return Promise.all(contributeurData.map(function (contributeur) {
 
-            Contributeur.create(contributeur).then(function (result) {
-                return Promise.resolve(result);
-            });
-        }));
+            var categoriePreferees = contributeur.categoriePreferees;
+            return Contributeur.create(contributeur)
+                .then(function (result) {
+                    return Promise.resolve(result);
+                })
+                .then(function(user){
+                    return Promise.all(categoriePreferees.map(function (categoriePrefereeId) {
+                         return  Promise.resolve(Promise.promisify(Contributeur.prototype.__link__categoriesPreferees).call(user, categoriePrefereeId));
+                    }));
+                });
+        }));    
     }
 
     function managePhoto() {

@@ -17,6 +17,11 @@
             "type": "hasMany",
             "model": "Projet",
             "foreignKey": ""
+        },
+        "contributeurQuiPrefere": {
+            "type": "hasMany",
+            "model": "CompteContributeur",
+            "foreignKey": ""
         }
     },
     "acls": [

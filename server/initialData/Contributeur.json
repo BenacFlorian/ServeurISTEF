@@ -12,7 +12,8 @@
         "dateNaissance": "1997-03-15",
         "email": "queen.oliver@gmail.com",
         "avatarUrl": "http://127.0.0.1:3000/api/containers/Contributeur/download/queen.oliver@gmail.com.jpg",
-        "password": "queenoliver"
+        "password": "queenoliver", 
+        "categoriePreferees":[1,2]
     },
     {
         "compteDebite": "9876543210",
@@ -27,6 +28,7 @@
         "created": "2016-05-07",
         "username": "KentClark",
         "email": "kent.clark@gmail.com",
-        "password": "kentclark"
+        "password": "kentclark", 
+        "categoriePreferees":[3]
     }
 ]

@@ -85,7 +85,7 @@ module.exports = function (CompteUser) {
 
     CompteUser.remoteMethod(
         'SeConnecter', {
-            description: 'Login whatever the type of compte. TEST PUSH',
+            description: 'Login whatever the type of compte.',
             accepts: [{
                 arg: 'email',
                 type: 'string'
@@ -100,6 +100,8 @@ module.exports = function (CompteUser) {
         }
     );
 
+    // ---------------------------------------------------------------
+    
     CompteUser.getUser = function (userId, typeUser, cb) {
         var Contributeur = app.models.CompteContributeur,
             Proposeur = app.models.CompteProposeur;
@@ -168,6 +170,8 @@ module.exports = function (CompteUser) {
         }
     );
     
+    // ---------------------------------------------------------------
+    
     CompteUser.getUsers = function (cb) {
         var Contributeur = app.models.CompteContributeur,
             Proposeur = app.models.CompteProposeur;
@@ -201,4 +205,146 @@ module.exports = function (CompteUser) {
             description: 'get users'
         }
     );
+    
+    // ---------------------------------------------------------------
+    
+    CompteUser.seConnecterFacebook = function (idFacebook, cb) {
+        var Contributeur = app.models.CompteContributeur,
+            Proposeur = app.models.CompteProposeur;
+
+        Contributeur.find({
+            where: {
+                idFacebook: idFacebook
+            }
+        })
+        .then(function (contributeurs) {
+            var size = contributeurs.length;
+            if (size > 0) {
+                // contributeur exist
+                var contributeur = contributeurs[0];
+                if (contributeur.estCompteActif) {
+                    Contributeur.login({
+                            email: contributeur.email,
+                            password: "passwordFacebook"
+                        })
+                        .then(function (token) {
+                            token.typeUser = "Contributeur";
+                            cb(null, token);
+                        });
+                } else {
+                    // error : user don't exist 
+                    cb("Compte non actif", null);
+                }
+            } else {
+                // contributeur don't exist
+                Proposeur.find({
+                        where: {
+                            idFacebook: idFacebook
+                        }
+                    })
+                    .then(function (proposeurs) {
+                        if (proposeurs.length > 0) {
+                            var proposeur = proposeurs[0];
+                            if (proposeur.estCompteActif) {
+                                Proposeur.login({
+                                        email: proposeur.email,
+                                        password: "passwordFacebook"
+                                    })
+                                    .then(function (token) {
+                                        token.typeUser = "Proposeur";
+                                        cb(null, token);
+                                    })
+                            } else {
+                                // error : user don't exist 
+                                cb("No user", null);
+                            }
+                        } else {
+                            // error : user don't exist 
+                            cb("Compte non actif", null);
+                        }
+                    });
+            }
+        })
+        .catch(function (err) {
+            console.log(err);
+        })
+    };
+
+    CompteUser.remoteMethod(
+        'seConnecterFacebook', {
+            accepts: {
+                arg: 'idFacebook',
+                type: 'string'
+            },
+            returns: {
+                arg: 'data',
+                type: 'object'
+            },
+            description: 'Connect with facebook id'
+        }
+    );
+    
+    // ---------------------------------------------------------------
+    CompteUser.existCompteFacebook = function (idFacebook, cb) {
+        var Contributeur = app.models.CompteContributeur,
+            Proposeur = app.models.CompteProposeur;
+
+        Contributeur.find({
+            where: {
+                idFacebook: idFacebook
+            }
+        })
+        .then(function (contributeurs) {
+            var size = contributeurs.length;
+            if (size > 0) {
+                cb(null, {
+                    exist : true
+                });
+            } else {
+                // contributeur don't exist
+                Proposeur.find({
+                        where: {
+                            idFacebook: idFacebook
+                        }
+                    })
+                    .then(function (proposeurs) {
+                        if (proposeurs.length > 0) {
+                            var proposeur = proposeurs[0];
+                            if (proposeur.estCompteActif) {
+                                cb(null, {
+                                    exist : true
+                                });
+                            } else {
+                                cb(null, {
+                                    exist : false
+                                });
+                            }
+                        } else {
+                            cb(null, {
+                                exist : false
+                            });
+                        }
+                    });
+            }
+        })
+        .catch(function (err) {
+            console.log(err);
+            cb(err, null);
+        })
+    };
+
+    CompteUser.remoteMethod(
+        'existCompteFacebook', {
+            accepts: {
+                arg: 'idFacebook',
+                type: 'string'
+            },
+            returns: {
+                arg: 'data',
+                type: 'object'
+            },
+            description: 'Test if a facebook acount exist'
+        }
+    );
+    
 };

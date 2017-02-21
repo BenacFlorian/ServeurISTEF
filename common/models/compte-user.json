@@ -40,6 +40,9 @@
         },
         "dateNaissance": {
             "type": "date"
+        },
+        "idFacebook": {
+            "type": "string"
         }
     },
     "validations": [],
@@ -62,6 +65,18 @@
         "principalId": "$everyone",
         "permission": "ALLOW",
         "property": "getUsers"
+    },{
+        "accessType": "EXECUTE",
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "seConnecterFacebook"
+    },{
+        "accessType": "EXECUTE",
+        "principalType": "ROLE",
+        "principalId": "$everyone",
+        "permission": "ALLOW",
+        "property": "existCompteFacebook"
     }],
     "methods": {}
 }
